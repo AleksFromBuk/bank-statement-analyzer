@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.t1.task4.shubookchapter02.MainController">
+
+        <Button fx:id="loadButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadFile" text="Load CSV" />
+        <Button fx:id="exportJSONButton" layoutX="84.0" layoutY="14.0" mnemonicParsing="false" onAction="#exportToJSON" text="Export to JSON" />
+        <Button fx:id="exportXMLButton" layoutX="184.0" layoutY="14.0" mnemonicParsing="false" onAction="#exportToXML" text="Export to XML" />
+        <TextArea fx:id="textArea" layoutX="14.0" layoutY="50.0" prefHeight="330.0" prefWidth="572.0" />
+
+</AnchorPane>
