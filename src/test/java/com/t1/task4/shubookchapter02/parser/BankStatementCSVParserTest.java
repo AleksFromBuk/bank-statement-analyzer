@@ -26,20 +26,13 @@ public class BankStatementCSVParserTest {
 
     @Test
     public void test_correctly_parses_valid_csv_line() {
-        // Создаем экземпляр класса BankStatementCSVParser
         BankStatementCSVParser parser = new BankStatementCSVParser();
-
-        // Входная строка CSV
         String csvLine = "12-01-2023,1000.50,Salary";
-
-        // Ожидаемый результат
         BankTransaction expectedTransaction = new BankTransaction(
                 LocalDate.of(2023, 1, 12),
                 1000.50,
                 "Salary"
         );
-
-        // Вызов метода parseFrom и проверка результата
         BankTransaction result = parser.parseFrom(csvLine);
         assertEquals(expectedTransaction, result);
     }

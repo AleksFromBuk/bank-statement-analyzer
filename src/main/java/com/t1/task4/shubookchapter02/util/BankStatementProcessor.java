@@ -49,7 +49,6 @@ public class BankStatementProcessor {
         return bankTransactions.stream().min(Comparator.comparingDouble(BankTransaction::getAmount));
     }
 
-    // глава 3
     public List<BankTransaction> findTransactions(final BankTransactionFilter bankTransactionFilter) {
         return bankTransactions.stream()
                 .filter(bankTransactionFilter::test)
