@@ -5,11 +5,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/**
- * Доменный класс для банковских операций
- * Что значит доменный! Это означает использование слов и терминологии,
- * соответствующих решаемой бизнес-задаче.
- */
 
 public class BankTransaction implements Serializable {
     @Serial
