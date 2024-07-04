@@ -1,5 +1,6 @@
 package com.t1.task4.shubookchapter02.domain;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
  */
 
 public class BankTransaction implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
     private  LocalDate date;
     private  double amount;
